@@ -74,7 +74,7 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
 
 ![Alt text](images/ofast_riscv.png)
 
-</be>
+</details>
 
 <details>
 <summary><b>Task 2:</b> Write a C code to find the lcm of 2 numbers. Compile it using the RISC compiler and simulate it using the spike simulation. Observe the -o1 and -ofast response and debug the assembly level code using spike</summary> 
