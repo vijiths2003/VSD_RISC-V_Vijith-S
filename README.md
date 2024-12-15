@@ -150,6 +150,7 @@ The below command is used to debug the assembly code using the SPIKE
 
 ## The unique RISC-V instructions between the addresses 10184 to 10204
 
+![Alt text](images/ofast_spike.png)
 
 ### 1. **addi - Add immediate**
    - **Description:** Adds an immediate value to a register.
