@@ -73,3 +73,8 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
      o The higher optimization (-Ofast) produces a more compact and efficient assembly.
 
 ![Alt text](images/ofast_riscv.png)
+
+<details>
+<summary><b>Task 1:</b> Install the RISC-V toolchain using the VDI. Write a simple C program to calculate the sum of numbers from 1 to n, compile it using the GCC compiler, and check the output. Then, compile the same code using the RISC-V GCC compiler to analyze its generated instructions.</summary> 
+  
+<be>
