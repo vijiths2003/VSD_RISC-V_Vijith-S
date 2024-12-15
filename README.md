@@ -15,4 +15,4 @@
 >RISC-V  is an open-standard instruction set architecture (ISA) based on Reduced Instruction Set Computing (RISC) principles.  RISC-V is a free and open architecture. It is designed to be simple, extensible, and modular, making it suitable for various applications, from small embedded systems to high-performance computing.
 
 ## 1. Download the Virtual Disk Image and Install it using Oracle VM Box**
-![Alt text](images/my-image.jpg)
+![Alt text](images/VirtualBox_workshop_05_12_2024_12_59_00.png)
