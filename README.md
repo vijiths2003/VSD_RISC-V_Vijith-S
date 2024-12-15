@@ -47,7 +47,7 @@ run the code using the ./a.out
 
   This command generates an assembly code for the program
 
-    riscv64-unknown-elf-objdump -d 1ton.o
+    riscv64-unknown-elf-objdump -d 1ton.o | less
 ![Alt text](images/riscv_compiler.png)
 
   now we have to locate the main section
