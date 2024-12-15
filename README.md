@@ -46,5 +46,12 @@ run the code using the ./a.out
 
 ## 4. Compile the C code using the RISC V Processor, and check the output**
 
+  the below command compiles the c program using risc v compiler
+  
     riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o 1ton.o 1ton.c
+
+  This command generates a assembly code for the program
+
+    riscv64-unknown-elf-objdump -d 1ton.o
+
 
