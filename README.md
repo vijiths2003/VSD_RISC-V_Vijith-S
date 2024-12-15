@@ -80,3 +80,19 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
 <summary><b>Task 2:</b> Write a C code to find the lcm of 2 numbers. Compile it using the RISC compiler and simulate it using the spike simulation. Observe the -o1 and -ofast response and debug the assembly level code using spike</summary> 
   
 ## 1. Simple C Program to find LCM of 2 numbers**
+![Alt text](images/spike_code.png)
+## 2. Running the code using GCC and compile it using the risc-v compiler and simulate the output using the SPIKE**
+the below command is used to run to spike simulation
+
+    spike -d pk lcm.o
+![Alt text](images/spike_output.png)
+## 3. Observe the -o1 and -0fast instruction response using the RISC-V gcc/ SPIKE**
+-o1 assembly Code
+![Alt text](images/o1_spike.png)
+-ofast assembly Code
+![Alt text](images/ofast_spike.png)
+## 4. Debug the code by using the spike instruction**
+The below command is used to debug the assembly code using the SPIKE
+
+    spike -d pk lcm.o
+![Alt text](images/spike_debug.png)
