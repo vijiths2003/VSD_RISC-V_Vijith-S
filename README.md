@@ -18,13 +18,13 @@
   
 >RISC-V  is an open-standard instruction set architecture (ISA) based on Reduced Instruction Set Computing (RISC) principles.  RISC-V is a free and open architecture. It is designed to be simple, extensible, and modular, making it suitable for various applications, from small embedded systems to high-performance computing.
 
-## 1. Download the Virtual Disk Image and Install it using Oracle VM Box**
+## 1. Download the Virtual Disk Image and Install it using Oracle VM Box
 ![Alt text](images/VirtualBox_workshop_05_12_2024_12_59_00.png)
 
-## 2. Write a simple C program to calculate the sum of numbers from 1 to n**
+## 2. Write a simple C program to calculate the sum of numbers from 1 to n
 ![Alt text](images/lab1_code.png)
 
-## 3. Compile the C code using the GCC compiler, and check the output**
+## 3. Compile the C code using the GCC compiler, and check the output
 ```
 cd
 ```
@@ -44,7 +44,7 @@ run the code using the ./a.out
 
 ![Alt text](images/lab1_terminal.png)
 
-## 4. Compile the C code using the RISC V Processor, and check the output**
+## 4. Compile the C code using the RISC V Processor, and check the output
 
   the below command compiles the c program using risc v compiler
   
@@ -79,20 +79,28 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
 <details>
 <summary><b>Task 2:</b> Write a C code to find the lcm of 2 numbers. Compile it using the RISC compiler and simulate it using the spike simulation. Observe the -o1 and -ofast response and debug the assembly level code using spike</summary> 
   
-## 1. Simple C Program to find LCM of 2 numbers**
+## 1. Simple C Program to find LCM of 2 numbers
 ![Alt text](images/spike_code.png)
+
 ## 2. Running the code using GCC and compile it using the risc-v compiler and simulate the output using the SPIKE**
 the below command is used to run to spike simulation
 
     spike -d pk lcm.o
 ![Alt text](images/spike_output.png)
-## 3. Observe the -o1 and -0fast instruction response using the RISC-V gcc/ SPIKE**
+
+## 3. Observe the -o1 and -0fast instruction response using the RISC-V gcc/ SPIKE
 -o1 assembly Code
+
 ![Alt text](images/o1_spike.png)
+
 -ofast assembly Code
+
 ![Alt text](images/ofast_spike.png)
-## 4. Debug the code by using the spike instruction**
+
+## 4. Debug the code by using the spike instruction
+
 The below command is used to debug the assembly code using the SPIKE
 
     spike -d pk lcm.o
+    
 ![Alt text](images/spike_debug.png)
