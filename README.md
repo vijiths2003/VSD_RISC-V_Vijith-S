@@ -82,7 +82,7 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
 ## 1. Simple C Program to find LCM of 2 numbers
 ![Alt text](images/spike_code.png)
 
-## 2. Running the code using GCC and compile it using the risc-v compiler and simulate the output using the SPIKE**
+## 2. Running the code using GCC and compile it using the risc-v compiler and simulate the output using the SPIKE
 the below command is used to run to spike simulation
 
     spike -d pk lcm.o
@@ -104,3 +104,8 @@ The below command is used to debug the assembly code using the SPIKE
     spike -d pk lcm.o
     
 ![Alt text](images/spike_debug.png)
+
+</details>
+
+<details>
+<summary><b>Task 3:</b> Understanding Various RISC V Instructions type. Identify 15 unique RISC-V instructions from riscv-objdmp and Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary> 
