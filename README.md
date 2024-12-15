@@ -55,4 +55,21 @@ run the code using the ./a.out
     riscv64-unknown-elf-objdump -d 1ton.o
 ![Alt text](images/riscv_compiler.png)
 
+  now we have to locate to main section
 
+    /main
+
+![Alt text](images/01_riscv.png)
+
+Observations in Assembly Instructions
+
+          The byte address for main was found to be 10184.
+          There were 15 instructions (in hexadecimal: E) when compiled with the -O1 optimization level.
+          The address of each consecutive instruction increments by 4 bytes, as observed in the disassembled output.
+          
+The same commands were run with the -Ofast optimization level instead of -O1, resulting in a reduced number of instructions—12.
+
+     o This demonstrates that the number and type of assembly instructions generated depend on the compilation optimization level used.
+     o The higher optimization (-Ofast) produces a more compact and efficient assembly.
+
+![Alt text](images/ofast_riscv.png)
