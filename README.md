@@ -1,5 +1,5 @@
 # VSD_RISC-V_based_internship
-1 month Research Internship on VSD Squadron Mini based on RISC-V, board is powered by CH32V003F4U6 chip with 32-bit RISC-V core
+1-month Research Internship on VSD Squadron Mini based on RISC-V, the board is powered by a CH32V003F4U6 chip with a 32-bit RISC-V core
 
 ### Intern: Vijith S
 ### **College**: SJB Institute of Technology, Bengaluru
@@ -50,12 +50,12 @@ run the code using the ./a.out
   
     riscv64-unknown-elf-gcc -o1 -mabi=lp64 -march=rv64i -o 1ton.o 1ton.c
 
-  This command generates a assembly code for the program
+  This command generates an assembly code for the program
 
     riscv64-unknown-elf-objdump -d 1ton.o
 ![Alt text](images/riscv_compiler.png)
 
-  now we have to locate to main section
+  now we have to locate the main section
 
     /main
 
@@ -63,7 +63,7 @@ run the code using the ./a.out
 
 Observations in Assembly Instructions
 
-          The byte address for main was found to be 10184.
+          The byte address for the main was found to be 10184.
           There were 15 instructions (in hexadecimal: E) when compiled with the -O1 optimization level.
           The address of each consecutive instruction increments by 4 bytes, as observed in the disassembled output.
           
@@ -75,6 +75,6 @@ The same commands were run with the -Ofast optimization level instead of -O1, re
 ![Alt text](images/ofast_riscv.png)
 
 <details>
-<summary><b>Task 1:</b> Install the RISC-V toolchain using the VDI. Write a simple C program to calculate the sum of numbers from 1 to n, compile it using the GCC compiler, and check the output. Then, compile the same code using the RISC-V GCC compiler to analyze its generated instructions.</summary> 
+<summary><b>Task 2:</b> Write a C code to find the lcm of 2 numbers. Compile it using the RISC compiler and simulate it using the spike simulation. Observe the -o1 and -ofast response and debug the assembly level code using spike</summary> 
   
 <be>
