@@ -20,3 +20,6 @@
 
 ## 1. Download the Virtual Disk Image and Install it using Oracle VM Box**
 ![Alt text](images/VirtualBox_workshop_05_12_2024_12_59_00.png)
+
+## 1. Write a simple C program to calculate the sum of numbers from 1 to n**
+![Alt text](images/lab1_code.png)
