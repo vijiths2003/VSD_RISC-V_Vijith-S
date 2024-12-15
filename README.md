@@ -21,9 +21,22 @@
 ## 1. Download the Virtual Disk Image and Install it using Oracle VM Box**
 ![Alt text](images/VirtualBox_workshop_05_12_2024_12_59_00.png)
 
-## 1. Write a simple C program to calculate the sum of numbers from 1 to n**
+## 2. Write a simple C program to calculate the sum of numbers from 1 to n**
 ![Alt text](images/lab1_code.png)
 
-## 1. Compile the C code using the GCC compiler, and check the output**
+## 3. Compile the C code using the GCC compiler, and check the output**
+```
+cd
+```
+
+```
+
+leafpad sum1ton.c
+```
+
+```
+gcc sum1ton.c
 ![Alt text](images/lab1_terminal.png)
+
+## 4. Compile the C code using the RISC V Processor, and check the output**
 
