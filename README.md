@@ -36,6 +36,8 @@ leafpad sum1ton.c
 
 ```
 gcc sum1ton.c
+```
+
 ![Alt text](images/lab1_terminal.png)
 
 ## 4. Compile the C code using the RISC V Processor, and check the output**
