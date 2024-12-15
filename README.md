@@ -119,6 +119,31 @@ The below command is used to debug the assembly code using the SPIKE
   ![image](https://github.com/user-attachments/assets/7c7d53f2-c2fc-47f4-aad3-1f2467df30d3)
 
 1. **R-Type (Register-to-Register)**  
-   - **Purpose**: Used for arithmetic and logical operations involving only registers.  
-   - **Fields**: `opcode`, `rd` (destination register), `funct3`, `rs1` (source register 1), `rs2` (source register 2), `funct7`.  
-   - **Example**: `add rd, rs1, rs2`.
+- **Purpose**: Used for arithmetic and logical operations involving only registers.  
+- **Fields**: `opcode`, `rd` (destination register), `funct3`, `rs1` (source register 1), `rs2` (source register 2), `funct7`.  
+- **Example**: `add rd, rs1, rs2`.
+  
+2. **I-Type (Immediate)**  
+- **Purpose**: Instructions involving immediate values, such as arithmetic with a constant or memory load.  
+- **Fields**: `opcode`, `rd`, `funct3`, `rs1`, `imm` (immediate value).  
+- **Example**: `addi rd, rs1, imm`.
+
+3. **S-Type (Store)**  
+- **Purpose**: Used for store operations (writing data to memory).  
+- **Fields**: `opcode`, `imm` (split into two parts), `rs1`, `rs2`, `funct3`.  
+- **Example**: `sw rs2, imm(rs1)`.
+
+4. **B-Type (Branch)**  
+- **Purpose**: Used for conditional branch instructions.  
+- **Fields**: `opcode`, `imm` (split into multiple parts), `rs1`, `rs2`, `funct3`.  
+- **Example**: `beq rs1, rs2, imm`.
+
+5. **U-Type (Upper Immediate)**  
+- **Purpose**: Used to load a 20-bit upper immediate value into the destination register.  
+- **Fields**: `opcode`, `rd`, `imm` (20 bits).  
+- **Example**: `lui rd, imm`
+
+6. **J-Type (Jump)**  
+- **Purpose**: Used for jump instructions.  
+- **Fields**: `opcode`, `rd`, `imm` (split into multiple parts).  
+- **Example**: `jal rd, imm`.
