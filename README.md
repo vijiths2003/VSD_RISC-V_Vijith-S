@@ -109,3 +109,16 @@ The below command is used to debug the assembly code using the SPIKE
 
 <details>
 <summary><b>Task 3:</b> Understanding Various RISC V Instructions type. Identify 15 unique RISC-V instructions from riscv-objdmp and Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary> 
+
+# what is RISC-V
+
+  It is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.
+
+  Base Instruction Formats
+
+  ![image](https://github.com/user-attachments/assets/7c7d53f2-c2fc-47f4-aad3-1f2467df30d3)
+
+1. **R-Type (Register-to-Register)**  
+   - **Purpose**: Used for arithmetic and logical operations involving only registers.  
+   - **Fields**: `opcode`, `rd` (destination register), `funct3`, `rs1` (source register 1), `rs2` (source register 2), `funct7`.  
+   - **Example**: `add rd, rs1, rs2`.
