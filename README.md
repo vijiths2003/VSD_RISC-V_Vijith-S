@@ -110,7 +110,7 @@ The below command is used to debug the assembly code using the SPIKE
 <details>
 <summary><b>Task 3:</b> Understanding Various RISC V Instructions type. Identify 15 unique RISC-V instructions from riscv-objdmp and Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary> 
 
-# what is RISC-V
+## what is RISC-V
 
   It is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.
 
