@@ -53,5 +53,6 @@ run the code using the ./a.out
   This command generates a assembly code for the program
 
     riscv64-unknown-elf-objdump -d 1ton.o
+![Alt text](images/riscv_compiler.png)
 
 
