@@ -147,3 +147,81 @@ The below command is used to debug the assembly code using the SPIKE
 - **Purpose**: Used for jump instructions.  
 - **Fields**: `opcode`, `rd`, `imm` (split into multiple parts).  
 - **Example**: `jal rd, imm`.
+
+## The unique RISC-V instructions between the addresses 10184 to 10204
+
+
+### 1. **addi - Add immediate**
+   - **Description:** Adds an immediate value to a register.
+   - **Example:** `addi sp, sp, -32`  
+     Adjusts the stack pointer.
+
+### 2. **sd - Store double word**
+   - **Description:** Stores a double word from a register into memory.
+   - **Example:** `sd ra, 24(sp)`  
+     Stores the return address on the stack.
+
+### 3. **lui - Load upper immediate**
+   - **Description:** Loads an immediate value into the upper 20 bits of a register.
+   - **Example:** `lui a0, 0x2b`  
+     Loads the upper 20 bits of a value into `a0`.
+
+### 4. **jal - Jump and link**
+   - **Description:** Jumps to a target address and stores the return address in a register.
+   - **Example:** `jal ra, 10460 <printf>`  
+     Calls the `printf` function and stores the return address in `ra`.
+
+### 5. **ld - Load double word**
+   - **Description:** Loads a double word from memory into a register.
+   - **Example:** `ld ra, 24(sp)`  
+     Loads the return address from the stack.
+
+### 6. **li - Load immediate (pseudo-instruction)**
+   - **Description:** Loads an immediate value into a register.
+   - **Example:** `li a0, 0`  
+     Loads the value `0` into `a0`.
+
+### 7. **lw - Load word**
+   - **Description:** Loads a word from memory into a register.
+   - **Example:** `lw a1, 12(sp)`  
+     Loads a word from the stack into `a1`.
+
+### 8. **sw - Store word**
+   - **Description:** Stores a word from a register into memory.
+   - **Example:** `sw a1, 12(sp)`  
+     Stores a word from `a1` onto the stack.
+
+### 9. **ret - Return from subroutine (pseudo-instruction)**
+   - **Description:** Returns control to the caller.
+   - **Example:** `ret`  
+     Returns from a subroutine.
+
+### 10. **mv - Move (pseudo-instruction)**
+   - **Description:** Copies a value from one register to another.
+   - **Example:** `mv s1, a0`  
+     Copies the value of `a0` into `s1`.
+
+### 11. **sub - Subtract**
+   - **Description:** Subtracts one register's value from another.
+   - **Example:** `sub a0, a0, s0`  
+     Subtracts `s0` from `a0` and stores the result in `a0`.
+
+### 12. **bne - Branch if not equal**
+   - **Description:** Branches to a target address if two registers are not equal.
+   - **Example:** `bne a5, a4, 17abc`  
+     Branches to address `17abc` if `a5` is not equal to `a4`.
+
+### 13. **slt - Set less than**
+   - **Description:** Compares two registers and sets the destination to 1 if the first is less than the second.
+   - **Example:** `slt a0, a0, a1`  
+     Sets `a0` to 1 if `a0` is less than `a1`, otherwise sets it to 0.
+
+### 14. **andi - AND immediate**
+   - **Description:** Performs a bitwise AND operation between a register and an immediate value.
+   - **Example:** `andi s0, s0, 0xFF`  
+     Performs a bitwise AND operation between `s0` and `0xFF`.
+
+### 15. **xor - Exclusive OR**
+   - **Description:** Performs a bitwise XOR operation between two registers.
+   - **Example:** `xor s1, s2, s3`  
+     Performs a bitwise XOR between `s2` and `s3`, storing the result in `s1`.
