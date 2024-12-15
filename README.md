@@ -28,7 +28,7 @@
 ```
 cd
 ```
-
+open the sum1ton.c code 
 ```
 
 leafpad sum1ton.c
@@ -36,6 +36,9 @@ leafpad sum1ton.c
 
 ```
 gcc sum1ton.c
+```
+```
+./a.out
 ```
 
 ![Alt text](images/lab1_terminal.png)
