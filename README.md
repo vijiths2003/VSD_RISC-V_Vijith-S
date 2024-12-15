@@ -33,10 +33,11 @@ open the sum1ton.c code
 
 leafpad sum1ton.c
 ```
-
+compile it using gcc compiler 
 ```
 gcc sum1ton.c
 ```
+run the code using the ./a.out
 ```
 ./a.out
 ```
