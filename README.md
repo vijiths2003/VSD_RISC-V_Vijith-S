@@ -153,27 +153,31 @@ The below command is used to debug the assembly code using the SPIKE
 
 ### 1. **addi - Add immediate**
    - **Description:** Adds an immediate value to a register.
-   - **Example:** `addi sp, sp, -32`  
+   - **Example:** `addi sp, sp, -32`
+   - Instruction 10184:   addi sp, sp, -32
      Adjusts the stack pointer.
 
 ### 2. **sd - Store double word**
    - **Description:** Stores a double word from a register into memory.
-   - **Example:** `sd ra, 24(sp)`  
+   - **Example:** `sd ra, 24(sp)`
+   - Instruction 10188:   sd   ra, 24(sp)
      Stores the return address on the stack.
 
 ### 3. **lui - Load upper immediate**
    - **Description:** Loads an immediate value into the upper 20 bits of a register.
-   - **Example:** `lui a0, 0x2b`  
+   - **Example:** `lui a0, 0x2b`
+   - Instruction 10198:   lui  a5, 0x2b
      Loads the upper 20 bits of a value into `a0`.
 
 ### 4. **jal - Jump and link**
    - **Description:** Jumps to a target address and stores the return address in a register.
-   - **Example:** `jal ra, 10460 <printf>`  
+   - **Example:** `jal ra, 10460 <printf>`
+   - Instruction    101a0:   jal  ra, 105f0
      Calls the `printf` function and stores the return address in `ra`.
 
 ### 5. **ld - Load double word**
    - **Description:** Loads a double word from memory into a register.
-   - **Example:** `ld ra, 24(sp)`  
+   - **Example:** `ld ra, 24(sp)`
      Loads the return address from the stack.
 
 ### 6. **li - Load immediate (pseudo-instruction)**
