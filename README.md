@@ -23,3 +23,7 @@
 
 ## 1. Write a simple C program to calculate the sum of numbers from 1 to n**
 ![Alt text](images/lab1_code.png)
+
+## 1. Compile the C code using the GCC compiler, and check the output**
+![Alt text](images/lab1_terminal.png)
+
