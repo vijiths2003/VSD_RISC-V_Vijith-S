@@ -290,3 +290,8 @@ gtkwave iiitb_rv32i.vcd
 **```Instruction 10: SLL R15, R1, R2```**  
 
 </details>  
+
+<details>
+<summary><b>Task 5:</b>Project: RADAR - 
+</summary> 
+  
