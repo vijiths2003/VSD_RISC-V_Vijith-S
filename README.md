@@ -20,8 +20,17 @@
 ![Alt text](images/lab1_code.png)
 
 ## 3. Compile the C code using the GCC compiler, and check the output
+
+Clone this GitHub repository in terminal and navigate the file
+
 ```
-cd
+git clone https://github.com/vijiths2003/VSD_RISC-V_based_internship.git
+```
+```
+cd VSD_RISC-V_Vijith-S
+```
+```
+cd Task-1
 ```
 open the sum1ton.c code 
 ```
@@ -105,7 +114,7 @@ The below command is used to debug the assembly code using the SPIKE
 <details>
 <summary><b>Task 3:</b> Understanding Various RISC V Instructions type. Identify 15 unique RISC-V instructions from riscv-objdmp and Identify exact 32-bit instruction code in the instruction type format for 15 unique instructions</summary> 
 
-## what is RISC-V
+## What is RISC-V
 
   It is an open standard instruction set architecture (ISA) based on established reduced instruction set computer (RISC) principles.
 
@@ -225,3 +234,8 @@ The below command is used to debug the assembly code using the SPIKE
    - **Description:** Performs a bitwise XOR operation between two registers.
    - **Example:** `xor s1, s2, s3`  
      Performs a bitwise XOR between `s2` and `s3`, storing the result in `s1`.
+
+<details>
+<summary><b>Task 4:</b>  Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms </summary> 
+  
+## 1. Cloning the repository and downloading the netlist files for simulation.
