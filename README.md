@@ -234,7 +234,7 @@ The below command is used to debug the assembly code using the SPIKE
    - **Description:** Performs a bitwise XOR operation between two registers.
    - **Example:** `xor s1, s2, s3`  
      Performs a bitwise XOR between `s2` and `s3`, storing the result in `s1`.
-
+</details>
 <details>
 <summary><b>Task 4:</b>  Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms </summary> 
   
@@ -265,7 +265,7 @@ gtkwave iiitb_rv32i.vcd
 ```
 ![Alt text](images/netlist_terminal.png)
 
-## 2. Observe and Understand the output
+## 3. Observe and Understand the output
 
 ![Alt text](images/verilog_output.png)
 
