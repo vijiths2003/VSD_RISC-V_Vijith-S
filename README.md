@@ -269,3 +269,15 @@ gtkwave iiitb_rv32i.vcd
 
 ![Alt text](images/verilog_output.png)
 
+**```Instruction 1: ADD R6, R2, R1```** 
+**```Instruction 2: SUB R7, R1, R2```**  
+**```Instruction 3: AND R8, R1, R3```**
+**```Instruction 4: OR R9, R2, R5```**  
+**```Instruction 5: XOR R10, R1, R4```**  
+**```Instruction 6: SLT R1, R2, R4```**  
+**```Instruction 7: ADDI R12, R4, 5```**  
+**```Instruction 8: BEQ R0, R0, 15```**  
+**```Instruction 9: BNE R0, R1, 20```**
+**```Instruction 10: SLL R15, R1, R2```**  
+
+</details>  
