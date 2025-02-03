@@ -292,6 +292,5 @@ gtkwave iiitb_rv32i.vcd
 </details>  
 
 <details>
-<summary><b>Task 5:</b>Project: RADAR - 
 </summary> 
   
