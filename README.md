@@ -330,3 +330,7 @@ Output: The selected data input is routed to the output (Y).
 ## 🚀 Circuit Diagram
 
   ![image](https://github.com/vijiths2003/VSD_RISC-V_Vijith-S/blob/main/images/circuit.png)
+
+## Video
+
+Video Link : https://drive.google.com/file/d/1-Q2HwOyRGpMIzDnIdO7geJdW-gSEMOZf/view?usp=sharing
