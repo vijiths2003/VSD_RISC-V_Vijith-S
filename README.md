@@ -327,3 +327,6 @@ Output: The selected data input is routed to the output (Y).
 2. *Upload the firmware* to the VSDMiniSquadron board.
 3. *Toggle switches* to select the desired number on the display.
 
+## 🚀 Circuit Diagram
+
+  ![image](https://github.com/vijiths2003/VSD_RISC-V_Vijith-S/blob/main/images/circuit.png)
