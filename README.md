@@ -292,7 +292,7 @@ gtkwave iiitb_rv32i.vcd
 </details>  
 
 <details>
-<summary><b>Project: Implementing 8x1 mux using VSD Squadron mini board </b> </summary>
+<summary><b>Project: Implementing 8x1 mux using VSD Squadron mini board and 7 segment Display </b> </summary>
   
 An 8x1 multiplexer (MUX) is a combinational circuit that selects one of eight input lines based on three selection lines and routes it to a single output.
 Inputs: Eight data inputs (I0, I1, I2, I3, I4, I5, I6, I7) and three selection lines (S2,S1, S0).
