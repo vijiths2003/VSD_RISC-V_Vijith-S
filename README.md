@@ -292,8 +292,38 @@ gtkwave iiitb_rv32i.vcd
 </details>  
 
 <details>
-<summary><b>Project: Implementing 8x1 mux using VSQSquadron mini board </b> </summary> 
-A 8x1 multiplexer (MUX) is a combinational circuit that selects one of eight input lines based on three selection lines and routes it to a single output.
+<summary><b>Project: Implementing 8x1 mux using VSD Squadron mini board </b> </summary>
+  
+An 8x1 multiplexer (MUX) is a combinational circuit that selects one of eight input lines based on three selection lines and routes it to a single output.
 Inputs: Eight data inputs (I0, I1, I2, I3, I4, I5, I6, I7) and three selection lines (S2,S1, S0).
 Output: The selected data input is routed to the output (Y).
+
+## 🛠 Connection Table
+
+| Component         | Pin/Signal | GPIO Pin | Notes |
+|------------------|------------|----------|-------|
+| *Switch 1 (S0)* | Selection Bit 0 | PD0 | Connect one side to GND, the other to GPIO with pull-up |
+| *Switch 2 (S1)* | Selection Bit 1 | PD1 | Connect one side to GND, the other to GPIO with pull-up |
+| *Switch 3 (S2)* | Selection Bit 2 | PD2 | Connect one side to GND, the other to GPIO with pull-up |
+| *7-Segment Display* | Segment A | PC0 | 220Ω current-limiting resistor |
+|                      | Segment B | PC1 | 220Ω current-limiting resistor |
+|                      | Segment C | PC2 | 220Ω current-limiting resistor |
+|                      | Segment D | PC3 | 220Ω current-limiting resistor |
+|                      | Segment E | PC4 | 220Ω current-limiting resistor |
+|                      | Segment F | PC5 | 220Ω current-limiting resistor |
+|                      | Segment G | PC6 | 220Ω current-limiting resistor |
+| *Common Cathode* | GND | - | If using a common anode, connect to VCC |
+
+## 📜 Description
+- *Three switches (PD0, PD1, PD2) act as selection lines.*
+- *7-segment display is connected to GPIO pins PC0 to PC6.*
+- *Resistors (220Ω) limit current for safe operation.*
+- *Switch logic controls which number is displayed.*
+
+---
+
+## 🚀 How to Use
+1. *Connect the components* as per the above table.
+2. *Upload the firmware* to the VSDMiniSquadron board.
+3. *Toggle switches* to select the desired number on the display.
 
